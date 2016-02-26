@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A965BFD2606E13DCDAF38BEACF7FD74B4D8FE793",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A965BFD2606E13DCDAF38BEACF7FD74B4D8FE793" : 0,
+    "FF468B5E42914B3DC0B9E38E1BFB275E18A0EA5D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E7EEA766-5433-4AA0-954C-5B1A8BFEC61F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A965BFD2606E13DCDAF38BEACF7FD74B4D8FE793" : "ParentAppDigitalFence\/",
+    "FF468B5E42914B3DC0B9E38E1BFB275E18A0EA5D" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ChildAppFinal",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ChildAppFinal\/ChildAppFinal.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/BankierJulien\/DigitalFenceApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A965BFD2606E13DCDAF38BEACF7FD74B4D8FE793"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/BankierJulien\/DigitalFence.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FF468B5E42914B3DC0B9E38E1BFB275E18A0EA5D"
+    }
+  ]
+}
