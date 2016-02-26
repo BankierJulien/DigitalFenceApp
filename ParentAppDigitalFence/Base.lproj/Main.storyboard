@@ -18,9 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M3K-wo-Kqq">
-                                <rect key="frame" x="20" y="77" width="560" height="371"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digitial Fence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZf-vv-KJo">
                                 <rect key="frame" x="20" y="28" width="560" height="41"/>
                                 <constraints>
@@ -31,13 +28,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhd-Ia-jUv">
-                                <rect key="frame" x="279" y="456" width="42" height="29"/>
+                                <rect key="frame" x="179" y="285" width="243" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="5nf-08-sgN"/>
-                                    <constraint firstAttribute="height" constant="29" id="jm5-AY-0sb"/>
+                                    <constraint firstAttribute="width" constant="243" id="H0c-JW-Rnv"/>
+                                    <constraint firstAttribute="height" constant="29" id="wRd-Zd-KyK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                <state key="normal" title="Login"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
+                                <state key="normal" title="Login Here">
+                                    <color key="titleColor" red="0.49462391883859935" green="0.58373708538639446" blue="0.87755208333333334" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="testButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lir-Ki-lLR"/>
                                 </connections>
@@ -47,13 +46,9 @@
                         <constraints>
                             <constraint firstItem="fZf-vv-KJo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3cM-o1-XUT"/>
                             <constraint firstItem="fZf-vv-KJo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="ADP-Hq-hM0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hhd-Ia-jUv" secondAttribute="bottom" constant="115" id="FQk-l0-shr"/>
-                            <constraint firstItem="Hhd-Ia-jUv" firstAttribute="centerX" secondItem="M3K-wo-Kqq" secondAttribute="centerX" id="LUH-wj-5fw"/>
-                            <constraint firstItem="M3K-wo-Kqq" firstAttribute="leading" secondItem="fZf-vv-KJo" secondAttribute="leading" id="S6r-JT-om2"/>
-                            <constraint firstItem="M3K-wo-Kqq" firstAttribute="top" secondItem="fZf-vv-KJo" secondAttribute="bottom" constant="8" symbolic="YES" id="gK1-p1-Yau"/>
-                            <constraint firstItem="M3K-wo-Kqq" firstAttribute="trailing" secondItem="fZf-vv-KJo" secondAttribute="trailing" id="kdO-Nv-x3Q"/>
+                            <constraint firstItem="Hhd-Ia-jUv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E9L-bL-ka6"/>
+                            <constraint firstItem="Hhd-Ia-jUv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FXe-S0-xjr"/>
                             <constraint firstItem="fZf-vv-KJo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="mPH-4i-Jzd"/>
-                            <constraint firstItem="Hhd-Ia-jUv" firstAttribute="top" secondItem="M3K-wo-Kqq" secondAttribute="bottom" constant="8" symbolic="YES" id="r71-DL-c3W"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -164,7 +159,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
                                 <state key="normal" title="Check Location">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.49462391880000001" green="0.58373708540000002" blue="0.87755208330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="checkLocationPressed:" destination="gN5-Qf-rBg" eventType="touchUpInside" id="F3y-lx-cuw"/>
@@ -177,7 +172,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
                                 <state key="normal" title="Upload Fence">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.49462391880000001" green="0.58373708540000002" blue="0.87755208330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="uploadFencePressed:" destination="gN5-Qf-rBg" eventType="touchUpInside" id="VdB-om-iuk"/>
@@ -245,6 +240,7 @@
                         <outlet property="latTextField" destination="AnM-Ld-CnQ" id="gR9-Ty-yz3"/>
                         <outlet property="longTextField" destination="h8m-MD-6pY" id="vm2-Xi-VxG"/>
                         <outlet property="mapView" destination="FJs-PX-YV7" id="0mI-xc-gns"/>
+                        <outlet property="nameTextLabel" destination="8LF-Me-0iu" id="LLS-aB-3HI"/>
                         <outlet property="radiusTextField" destination="8bQ-9g-URW" id="G6w-sI-0H4"/>
                     </connections>
                 </viewController>

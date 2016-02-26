@@ -43,7 +43,7 @@
 
 - (void)removeAnimate
 {
-    [UIView animateWithDuration:.25 animations:^{
+    [UIView animateWithDuration:.6 animations:^{
         self.view.transform = CGAffineTransformMakeScale(1.3, 1.3);
         self.view.alpha = 0.0;
     } completion:^(BOOL finished) {
@@ -64,7 +64,6 @@
         UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UserHomeVC * home= [storybord instantiateViewControllerWithIdentifier:@"HomeNav"] ;
         home.username= self.userName;
-//        [self presentViewController:home animated:YES completion:nil];
         [self.view.window.rootViewController presentViewController:home animated:YES completion:nil];
 
     }

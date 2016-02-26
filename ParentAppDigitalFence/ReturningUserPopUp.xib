@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReturningUserPopUp">
@@ -19,47 +18,36 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0H-rT-hej">
-                    <rect key="frame" x="171" y="180" width="259" height="240"/>
+                    <rect key="frame" x="8" y="8" width="584" height="584"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHZ-uN-qJu">
-                            <rect key="frame" x="106" y="202" width="47" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHZ-uN-qJu">
+                            <rect key="frame" x="269" y="374" width="47" height="30"/>
                             <state key="normal" title="Sign In"/>
                             <connections>
                                 <action selector="exitButton:" destination="-1" eventType="touchUpInside" id="1cc-Qt-Ziz"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBI-UN-Xok">
-                            <rect key="frame" x="8" y="8" width="243" height="31"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBI-UN-Xok">
+                            <rect key="frame" x="171" y="180" width="243" height="31"/>
                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cI4-ix-i1v">
-                            <rect key="frame" x="8" y="105" width="243" height="30"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cI4-ix-i1v">
+                            <rect key="frame" x="171" y="277" width="243" height="30"/>
                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="cI4-ix-i1v" firstAttribute="centerY" secondItem="i0H-rT-hej" secondAttribute="centerY" id="8iW-ms-4YA"/>
-                        <constraint firstItem="VBI-UN-Xok" firstAttribute="trailing" secondItem="i0H-rT-hej" secondAttribute="trailingMargin" id="N9K-4o-jhi"/>
-                        <constraint firstItem="VBI-UN-Xok" firstAttribute="leading" secondItem="cI4-ix-i1v" secondAttribute="leading" id="OZK-eP-HZe"/>
-                        <constraint firstItem="cI4-ix-i1v" firstAttribute="centerX" secondItem="zHZ-uN-qJu" secondAttribute="centerX" id="QLc-X8-CY2"/>
-                        <constraint firstItem="VBI-UN-Xok" firstAttribute="top" secondItem="i0H-rT-hej" secondAttribute="topMargin" id="RQe-WN-oJZ"/>
-                        <constraint firstItem="zHZ-uN-qJu" firstAttribute="bottom" secondItem="i0H-rT-hej" secondAttribute="bottomMargin" id="bbE-PV-Ym3"/>
-                        <constraint firstItem="VBI-UN-Xok" firstAttribute="leading" secondItem="i0H-rT-hej" secondAttribute="leadingMargin" id="cxE-UH-Hzq"/>
-                        <constraint firstItem="VBI-UN-Xok" firstAttribute="trailing" secondItem="cI4-ix-i1v" secondAttribute="trailing" id="kEZ-G9-Bj0"/>
-                        <constraint firstItem="cI4-ix-i1v" firstAttribute="top" secondItem="VBI-UN-Xok" secondAttribute="bottom" constant="66" id="nJq-xb-Vku"/>
-                        <constraint firstItem="zHZ-uN-qJu" firstAttribute="top" secondItem="cI4-ix-i1v" secondAttribute="bottom" constant="67" id="u15-Ml-8EZ"/>
-                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="i0H-rT-hej" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AiU-vA-RZU"/>
-                <constraint firstItem="i0H-rT-hej" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="171" id="rUh-aF-0c0"/>
-                <constraint firstItem="i0H-rT-hej" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="uT1-No-uef"/>
+                <constraint firstItem="i0H-rT-hej" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="7V9-9a-aHn"/>
+                <constraint firstAttribute="bottom" secondItem="i0H-rT-hej" secondAttribute="bottom" constant="8" id="8zB-g9-VIa"/>
+                <constraint firstItem="i0H-rT-hej" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="S9n-dT-9R2"/>
+                <constraint firstAttribute="trailing" secondItem="i0H-rT-hej" secondAttribute="trailing" constant="8" id="n0l-of-AoM"/>
             </constraints>
         </view>
     </objects>

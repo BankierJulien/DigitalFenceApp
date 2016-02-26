@@ -16,6 +16,7 @@
 
 
 - (IBAction)testButtonPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UIView *loginView;
 
 @end
 
